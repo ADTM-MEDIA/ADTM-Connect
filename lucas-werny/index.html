@@ -37,7 +37,7 @@
         <a class="action" href="mailto:lucas.werny@projest.fr"><span>&#9993;</span> Email</a>
         <a class="action" href="https://www.projest.fr"><span>&#127760;</span> Site agence</a>
         <a class="action" href="https://www.projest.fr/conseiller/lucas.werny,109"><span>&#127969;</span> Mes biens</a>
-        <a class="action" href="https://www.google.com/search?q=PROJ%27EST%20Immobilier"><span>&#11088;</span> Laisser un avis Google</a>
+        <a class="action" href="https://share.google/kXX1zKzySnkxYHDoM"><span>&#11088;</span> Laisser un avis Google</a>
         <a class="action" href="https://www.facebook.com/share/17HDzJbBJQ/?mibextid=wwXIfr"><span>&#128216;</span> Facebook</a>
         <a class="action" href="https://www.instagram.com/lucaswerny_immobilier"><span>&#128247;</span> Instagram</a>
         <a class="action" href="https://www.tiktok.com/@lucas.werny"><span>&#127925;</span> TikTok</a>
@@ -80,9 +80,9 @@
         <span aria-hidden="true">&#127968;</span>
         <strong>Mes biens</strong>
       </a>
-      <a class="bottom-nav__item" href="https://www.google.com/search?q=PROJ%27EST%20Immobilier">
+      <a class="bottom-nav__item" href="https://share.google/kXX1zKzySnkxYHDoM">
         <span aria-hidden="true">&#11088;</span>
-        <strong>Avis</strong>
+        <strong>Avis Google</strong>
       </a>
       <button
         class="bottom-nav__item bottom-nav__item--button"
@@ -105,10 +105,27 @@
         <a href="mailto:lucas.werny@projest.fr">Email</a>
         <a href="https://www.projest.fr">Site agence</a>
         <a href="#why-lucas">Pourquoi travailler avec Lucas</a>
+        <a href="https://www.facebook.com/share/17HDzJbBJQ/?mibextid=wwXIfr">Facebook</a>
+        <a href="https://www.instagram.com/lucaswerny_immobilier">Instagram</a>
+        <a href="https://www.tiktok.com/@lucas.werny">TikTok</a>
       </div>
     </div>
 
     <script>
+      window.adtmConnectAgent = {
+        phone: "+33777818100",
+        whatsapp_url: "https://wa.me/33777818100",
+        email: "lucas.werny@projest.fr",
+        agency_site_url: "https://www.projest.fr",
+        properties_url: "https://www.projest.fr/conseiller/lucas.werny,109",
+        google_review_url: "https://share.google/kXX1zKzySnkxYHDoM",
+        social_urls: {
+          facebook: "https://www.facebook.com/share/17HDzJbBJQ/?mibextid=wwXIfr",
+          instagram: "https://www.instagram.com/lucaswerny_immobilier",
+          tiktok: "https://www.tiktok.com/@lucas.werny"
+        }
+      };
+
       window.adtmConnectSource = new URLSearchParams(window.location.search).get("src") || "";
 
       const moreMenu = document.getElementById("more-menu");
