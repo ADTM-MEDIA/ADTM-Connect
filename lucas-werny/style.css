@@ -54,24 +54,21 @@ a {
 }
 
 .logo-slot {
-  width: fit-content;
+  width: min(100%, 255px);
   margin: 0 auto 18px;
-  padding: 8px 15px;
+  padding: 8px;
   border: 1px solid rgba(198, 161, 91, 0.55);
-  border-radius: 999px;
-  color: var(--green-900);
-  font-weight: 800;
-  line-height: 1;
+  border-radius: 18px;
+  background: rgba(15, 47, 39, 0.96);
+  line-height: 0;
+  box-shadow: 0 12px 26px rgba(15, 47, 39, 0.15);
 }
 
-.logo-slot small {
+.logo-slot img {
   display: block;
-  margin-top: 3px;
-  color: var(--gold-dark);
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
 .portrait {
