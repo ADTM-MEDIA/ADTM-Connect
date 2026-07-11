@@ -43,7 +43,7 @@
         <a class="action" href="https://www.tiktok.com/@lucas.werny"><span>&#127925;</span> TikTok</a>
       </section>
 
-      <section class="content-section">
+      <section class="content-section" id="why-lucas">
         <p class="section-kicker">Accompagnement local</p>
         <h2>Pourquoi travailler avec Lucas ?</h2>
         <div class="value-grid">
@@ -67,8 +67,78 @@
       </footer>
     </main>
 
+    <nav class="bottom-nav" aria-label="Navigation rapide">
+      <a class="bottom-nav__item" href="tel:+33777818100">
+        <span aria-hidden="true">&#128222;</span>
+        <strong>Appeler</strong>
+      </a>
+      <a class="bottom-nav__item" href="https://wa.me/33777818100">
+        <span aria-hidden="true">&#128172;</span>
+        <strong>WhatsApp</strong>
+      </a>
+      <a class="bottom-nav__item" href="https://www.projest.fr/conseiller/lucas.werny,109">
+        <span aria-hidden="true">&#127968;</span>
+        <strong>Mes biens</strong>
+      </a>
+      <a class="bottom-nav__item" href="https://www.google.com/search?q=PROJ%27EST%20Immobilier">
+        <span aria-hidden="true">&#11088;</span>
+        <strong>Avis</strong>
+      </a>
+      <button
+        class="bottom-nav__item bottom-nav__item--button"
+        type="button"
+        id="more-menu-button"
+        aria-expanded="false"
+        aria-controls="more-menu"
+      >
+        <span aria-hidden="true">&#9776;</span>
+        <strong>Plus</strong>
+      </button>
+    </nav>
+
+    <div class="more-menu" id="more-menu" hidden>
+      <div class="more-menu__panel" role="dialog" aria-labelledby="more-menu-title">
+        <div class="more-menu__header">
+          <p id="more-menu-title">Acc&egrave;s rapides</p>
+          <button class="more-menu__close" type="button" aria-label="Fermer le menu">&times;</button>
+        </div>
+        <a href="mailto:lucas.werny@projest.fr">Email</a>
+        <a href="https://www.projest.fr">Site agence</a>
+        <a href="#why-lucas">Pourquoi travailler avec Lucas</a>
+      </div>
+    </div>
+
     <script>
       window.adtmConnectSource = new URLSearchParams(window.location.search).get("src") || "";
+
+      const moreMenu = document.getElementById("more-menu");
+      const moreMenuButton = document.getElementById("more-menu-button");
+      const moreMenuClose = moreMenu.querySelector(".more-menu__close");
+
+      function setMoreMenu(open) {
+        moreMenu.hidden = !open;
+        moreMenuButton.setAttribute("aria-expanded", String(open));
+      }
+
+      moreMenuButton.addEventListener("click", () => {
+        setMoreMenu(moreMenu.hidden);
+      });
+
+      moreMenuClose.addEventListener("click", () => {
+        setMoreMenu(false);
+      });
+
+      moreMenu.addEventListener("click", (event) => {
+        if (event.target === moreMenu || event.target.closest("a")) {
+          setMoreMenu(false);
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          setMoreMenu(false);
+        }
+      });
     </script>
   </body>
 </html>
