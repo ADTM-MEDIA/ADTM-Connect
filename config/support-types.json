@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": 1,
+  "supportTypes": [
+    { "code": "panneau", "prefix": "PA", "requiresProperty": true, "generatesLabel": true, "generatesPrintPdf": true },
+    { "code": "sticker", "prefix": "ST", "requiresProperty": false, "generatesLabel": false, "generatesPrintPdf": false },
+    { "code": "carte_nfc", "prefix": "CA", "requiresProperty": false, "generatesLabel": false, "generatesPrintPdf": false },
+    { "code": "vitrine", "prefix": "VI", "requiresProperty": true, "generatesLabel": true, "generatesPrintPdf": true },
+    { "code": "flyer", "prefix": "FL", "requiresProperty": true, "generatesLabel": true, "generatesPrintPdf": true }
+  ]
+}
