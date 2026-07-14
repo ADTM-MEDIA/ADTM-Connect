@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://adtm.systems/schemas/connect-v2/support.schema.json",
+  "title": "ADTM Connect V2 - Support QR NFC",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id_support", "type_support", "url_destination", "code_source", "statut_support", "version"],
+  "properties": {
+    "id_support": { "type": "string", "pattern": "^[A-Z0-9]+-[A-Z]{2}[0-9]{2}$" },
+    "type_support": { "enum": ["panneau", "sticker", "carte_nfc", "vitrine", "flyer"] },
+    "bien_associe": { "type": ["string", "null"], "pattern": "^[A-Z0-9]+$" },
+    "url_destination": { "type": "string", "format": "uri", "pattern": "^https://.*[?&]src=[A-Z0-9]+-[A-Z]{2}[0-9]{2}(?:&.*)?$" },
+    "code_source": { "type": "string", "pattern": "^[A-Z0-9]+-[A-Z]{2}[0-9]{2}$" },
+    "statut_support": { "enum": ["a_generer", "en_cours", "actif", "inactif", "erreur", "archive"] },
+    "version": { "type": "integer", "minimum": 1 },
+    "date_generation": { "type": ["string", "null"], "format": "date-time" }
+  }
+}
