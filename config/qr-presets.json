@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": 1,
+  "defaultPreset": "print_standard",
+  "presets": {
+    "print_standard": {
+      "formatMaster": "svg",
+      "previewFormat": "png",
+      "errorCorrectionLevel": "H",
+      "marginModules": 4,
+      "foreground": "#000000",
+      "background": "#FFFFFF",
+      "pngPreviewSizePx": 1200,
+      "allowLogoOverlay": false
+    }
+  }
+}
