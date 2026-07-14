@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": 1,
+  "defaultPreset": "projest_panel_label",
+  "presets": {
+    "projest_panel_label": {
+      "unit": "mm",
+      "width": 50,
+      "height": 60,
+      "bleed": 0,
+      "safeMargin": 3,
+      "colorMode": "CMYK",
+      "pdfStandard": "PDF/X-4",
+      "embedFonts": true,
+      "preserveVectors": true
+    }
+  }
+}
