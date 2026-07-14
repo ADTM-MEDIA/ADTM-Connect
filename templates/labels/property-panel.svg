@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="{{WIDTH_MM}}mm" height="{{HEIGHT_MM}}mm" viewBox="0 0 {{WIDTH_MM}} {{HEIGHT_MM}}">
+  <rect width="{{WIDTH_MM}}" height="{{HEIGHT_MM}}" fill="#ffffff"/>
+  <rect x="0.6" y="0.6" width="{{BORDER_WIDTH}}" height="{{BORDER_HEIGHT}}" rx="1.5" fill="none" stroke="#111111" stroke-width="0.6"/>
+  <text x="{{CENTER_X}}" y="7" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="4.1" font-weight="700" fill="#111111">PROJ’EST IMMOBILIER</text>
+  <text x="{{CENTER_X}}" y="12" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="2.7" font-weight="700" fill="#111111">{{PROPERTY_NAME}}</text>
+  <g transform="translate({{QR_X}} {{QR_Y}}) scale({{QR_SCALE}})">{{QR_CONTENT}}</g>
+  <text x="{{CENTER_X}}" y="49" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="3.1" font-weight="700" fill="#111111">Scannez pour découvrir le bien</text>
+  <text x="{{CENTER_X}}" y="54" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="2.7" fill="#333333">Réf. {{PROPERTY_REFERENCE}}</text>
+  <text x="{{CENTER_X}}" y="57.2" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="1.8" fill="#666666">{{SUPPORT_ID}} · v{{VERSION}}</text>
+</svg>
