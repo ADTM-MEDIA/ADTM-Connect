@@ -1,0 +1,23 @@
+{
+  "bien": {
+    "reference_projest": "VA1928",
+    "nom_bien": "Appartement T4 Montbéliard",
+    "url_annonce": "https://www.projest.fr/vente/appartement-t4-4-pieces-montbeliard-25200,VA1928",
+    "statut_bien": "actif",
+    "identifiant_panneau": "VA1928-PA01",
+    "qr_associe": "VA1928-PA01",
+    "date_generation": null,
+    "etat_generation": "a_generer",
+    "message_erreur": null
+  },
+  "support": {
+    "id_support": "VA1928-PA01",
+    "type_support": "panneau",
+    "bien_associe": "VA1928",
+    "url_destination": "https://adtm-media.github.io/ADTM-Connect/bien/VA1928/?src=VA1928-PA01",
+    "code_source": "VA1928-PA01",
+    "statut_support": "a_generer",
+    "version": 1,
+    "date_generation": null
+  }
+}
