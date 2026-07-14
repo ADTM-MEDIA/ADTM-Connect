@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://adtm.systems/schemas/connect-v2/bien.schema.json",
+  "title": "ADTM Connect V2 - Bien",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["reference_projest", "nom_bien", "url_annonce", "statut_bien", "identifiant_panneau", "etat_generation"],
+  "properties": {
+    "reference_projest": { "type": "string", "pattern": "^[A-Z0-9]+$", "minLength": 2, "maxLength": 32 },
+    "nom_bien": { "type": "string", "minLength": 1, "maxLength": 160 },
+    "url_annonce": { "type": "string", "format": "uri", "pattern": "^https://" },
+    "statut_bien": { "enum": ["brouillon", "actif", "inactif", "archive"] },
+    "identifiant_panneau": { "type": "string", "pattern": "^[A-Z0-9]+-PA[0-9]{2}$" },
+    "qr_associe": { "type": ["string", "null"], "pattern": "^[A-Z0-9]+-[A-Z]{2}[0-9]{2}$" },
+    "date_generation": { "type": ["string", "null"], "format": "date-time" },
+    "etat_generation": { "enum": ["non_demandee", "a_generer", "en_cours", "terminee", "erreur"] },
+    "message_erreur": { "type": ["string", "null"], "maxLength": 4000 }
+  }
+}
