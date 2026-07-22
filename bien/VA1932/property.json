@@ -1,0 +1,21 @@
+{
+  "reference_projest": "VA1932",
+  "nom_bien": "Appartement F4 Audincourt",
+  "url_annonce": "https://www.projest.fr/vente/appartement-t4-4-pieces-audincourt-25400,VA1932",
+  "statut_bien": "actif",
+  "prix_eur": 55000,
+  "surface_m2": 63.25,
+  "pieces": 4,
+  "chambres": 3,
+  "ville": "Audincourt",
+  "code_postal": "25400",
+  "dpe": "D",
+  "ges": "D",
+  "charges_mensuelles_eur": 80,
+  "conseiller": {
+    "nom": "Lucas Werny",
+    "telephone": "+33777818100"
+  },
+  "source_donnees": "annonce officielle Proj'est Immobilier",
+  "date_validation_humaine": null
+}
